@@ -9,10 +9,15 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Area2D",
+"base": "KinematicBody2D",
 "class": "Bullet",
 "language": "GDScript",
-"path": "res://Scenes/Bullet.gd"
+"path": "res://Content/Bullet/Bullet.gd"
+}, {
+"base": "Node2D",
+"class": "Mushroom",
+"language": "GDScript",
+"path": "res://Content/Mushroom/Mushroom.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Player",
@@ -21,6 +26,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Bullet": "",
+"Mushroom": "",
 "Player": ""
 }
 
@@ -70,4 +76,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"
