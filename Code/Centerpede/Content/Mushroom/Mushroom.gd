@@ -1,6 +1,5 @@
 extends Node2D
 class_name Mushroom
-
 onready var SPRITE = $AnimatedSprite
 var health: int = 4 # 0 - 5
 
